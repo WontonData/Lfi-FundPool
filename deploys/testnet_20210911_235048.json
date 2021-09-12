@@ -1,0 +1,178 @@
+{
+  "network": "testnet",
+  "codeHash": "0x52e188e17145b4d6e0afeacc0e4584d80b0542be1ced177758c43773022bd179",
+  "array": [
+    "cfxtest:acazsk01urtgfmvjzw2y5yj3fu91cr89dj4ecmyp9f"
+  ],
+  "json": {
+    "vault": "cfxtest:acazsk01urtgfmvjzw2y5yj3fu91cr89dj4ecmyp9f"
+  },
+  "obj": {
+    "vault": {
+      "type": "address",
+      "value": "cfxtest:acazsk01urtgfmvjzw2y5yj3fu91cr89dj4ecmyp9f"
+    }
+  },
+  "empty": false,
+  "receipt": {
+    "transactionHash": "0x03caa7e11557215db5770ebeabaeb809c94947bb04f1468388b6f9845a0196b6",
+    "index": 1,
+    "blockHash": "0x433aabd8dfc3d2f75e2f822ffc1c67989a427e8f79c476eaca2fdb56087528f1",
+    "epochNumber": 43034034,
+    "from": "cfxtest:aar9fe37w61vadm62ds132ntxgn5ngnnej277edujw",
+    "to": null,
+    "gasUsed": "6546260",
+    "gasFee": "6546260",
+    "contractCreated": "cfxtest:accc1ehe7su3b3g7zd5f0kfn1fvzwekxcu7ghexrpc",
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "stateRoot": "0x7c4a1053fd2c557d65efa5d3b739d60a70e526569962fe29ed64ca4a54f44ae4",
+    "outcomeStatus": 0,
+    "txExecErrorMsg": null,
+    "gasCoveredBySponsor": false,
+    "storageCoveredBySponsor": false,
+    "storageCollateralized": "12864",
+    "storageReleased": []
+  },
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IVault",
+          "name": "vault",
+          "type": "address",
+          "networkId": 1
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "name": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "pool",
+          "type": "address",
+          "networkId": 1
+        }
+      ],
+      "name": "PoolCreated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "SPONSOR",
+      "outputs": [
+        {
+          "internalType": "contract SponsorWhitelistControl",
+          "name": "",
+          "type": "address",
+          "networkId": 1
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "symbol",
+          "type": "string"
+        },
+        {
+          "internalType": "contract IERC20[]",
+          "name": "tokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "weights",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "swapFeePercentage",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address",
+          "networkId": 1
+        }
+      ],
+      "name": "create",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address",
+          "networkId": 1
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPauseConfiguration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "pauseWindowDuration",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bufferPeriodDuration",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getVault",
+      "outputs": [
+        {
+          "internalType": "contract IVault",
+          "name": "",
+          "type": "address",
+          "networkId": 1
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address",
+          "networkId": 1
+        }
+      ],
+      "name": "isPoolFromFactory",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 {
-  "main": "./contracts/Coin.sol",
-  "deploy": "./build/contracts/ConvergentPoolFactory.json",
+  "main": "./contracts/Vault.sol",
+  "deploy": "./build/contracts/Vault.json",
+  "framework": "cfxtruffle-docker",
   "compilers": {
-    "cfxtruffle": "1.0.2",
+    "cfxtruffle": "0.0.8",
     "solc": "0.7.1",
     "evmVersion": "istanbul",
     "optimizer": {
@@ -10,5 +11,10 @@
       "runs": 1000
     }
   },
-  "linter": "solhint"
+  "linter": "solhint",
+  "editor": {
+    "fontFamily": "Hack",
+    "fontSize": "13px",
+    "ligatures": false
+  }
 }
